@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Monto</title>
+    <link rel="stylesheet" href="CargarMonto.css">
+    <link rel="icon" type="image/svg+xml" href="images/autobus.png">
+</head>
+
+<body>
+
+    <section>
+        <div class="cuadrado">
+            <h1 class="pass">M-PASS</h1>
+            <img class="logo" src="images/autobus.png">
+            <a href="filtar.html"><button class="boton1">Filtar cajas</button></a>
+            <a href="creacionTarjeta.html"><button class="boton2">Crear Tarjeta</button></a>
+
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 class="titulo">CARGAR MONTO</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div>
+                <h2>Cargar Montos a las Tarjetas</h2>
+                <br>
+
+                <main>
+                    <section class="form-section">
+                        <form id="rechargeForm">
+                            <h1>Recargar Saldo</h1>
+
+
+                            <label for="cardNumber">Número de Tarjeta:</label>
+                            <input class="cardNumber" type="number" id="cardNumber" required>
+                            <br>
+                            <br>
+
+                            <label  for="rechargeAmount">Monto a Recargar:</label>
+                            <input class="rechargeAmount" type="number" id="rechargeAmount" required>
+                            <br>
+                            <br>
+                            <label  for="selectBox">Seleccionar Caja:</label>
+                            <select class="selectBox" id="selectBox">
+                                <option value="0">Seleccione una caja...</option>
+                                <option value="1">Caja 1</option>
+                                <option value="2">Caja 2</option>
+                                <option value="3">Caja 3</option>
+                                <option value="4">Caja 4</option>
+                                <option value="5">Caja 5</option>
+                                <option value="6">Caja 6</option>
+                                <option value="7">Caja 7</option>
+                            </select>
+                            <br>
+                            <br>
+                            <div>
+                                <button type="button" class="botonrecagar" id="botonrecagar">Cargar Tarjeta</button>
+                            </div>
+                        </form>
+                    </section>
+                </main>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <ul id="listaTarjetas"></ul>
+
+    <script src="CargarMonto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrar y Calcular Datos de Tarjetas</title>
+    <link rel="stylesheet" href="filtar.css">
+    <link rel="icon" type="image/svg+xml" href="images/autobus.png">
+
+</head>
+<body>
+    <section>
+        <div class="cuadrado">
+            <h1 class="pass">M-PASS</h1>
+            <a href="CargarMonto.html"></a>
+            <img class="logo" src="images/autobus.png">
+            <a href="CargarMonto.html"></a>
+        </div>
+        <a href="CargarMonto.html"><button class="boton">Volver</button></a>
+
+    </section>
+    <div class="container">
+    <h1>Filtrar y Calcular Datos de Tarjetas</h1>
+    <label for="filterBox">Seleccione Caja:</label>
+            <select id="filterBox" placeholder="Caja">
+                <option value="0">Seleccione una caja...</option>
+                <option value="1">Caja 1</option>
+                <option value="2">Caja 2</option>
+                <option value="3">Caja 3</option>
+                <option value="4">Caja 4</option>
+                <option value="5">Caja 5</option>
+                <option value="6">Caja 6</option>
+                <option value="7">Caja 7</option>
+            </select>
+            <br>
+            <br>
+     
+    <button id="averageBalanceBtn">Calcular Saldo Promedio</button>
+    <br>
+    <br>
+    <button id="averageRechargeBtn">Calcular Promedio de Recarga</button>
+    <br>
+    <br>
+    <button id="totalPreviousBalancesBtn">Calcular Total de Saldos Anteriores</button>
+    <br>
+    <br>
+    <button id="totalEnabledRechargesBtn">Calcular Total de Recargas Habilitadas</button>
+    <br>
+    <br>
+    <button id="totalDisabledRechargesBtn">Calcular Total de Recargas Deshabilitadas</button>
+    <br>
+    <br>
+</div>
+<br><br>
+<div class="container2">
+    <p id="averageAmountResult"></p>
+    <br>
+    <p id="totalPreviousBalancesResult"></p>
+    <br>
+    <p id="totalEnabledRechargesResult"></p>
+    <br>
+    <p id="totalDisabledRechargesResult"></p>
+</div>
+
+    <script src="filtar.js"></script>

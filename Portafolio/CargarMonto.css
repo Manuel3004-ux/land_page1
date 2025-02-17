@@ -1,0 +1,159 @@
+.cuadrado {
+    width: 320px;
+    height: 800px;
+    background-color: #189c40;
+    position: absolute;
+    
+  }
+  body {
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #00bf36;
+    margin: 0;
+    padding: 0;
+  }
+  label{
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 2rem;
+    
+  }
+
+  .cardNumber {
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .rechargeAmount{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+  }
+
+  .selectBox{
+    width: 310px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .container {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 1.5em;
+  }
+
+
+  .logo{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: white;
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .pass{
+
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:5%;
+    left: 30%;
+    font-size: 1.5em;
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+ .titulo {
+
+
+    color: black;
+    position: absolute;
+    top:5%;
+    left: 25%;
+    font-size: 4em;
+    font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+
+
+ .botonrecagar{
+  background-color: #08d141;
+  color: white;
+  height:70px;
+  width: 500px;
+  border:none;
+  border-radius: 10px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 110%;
+  left: 5%;
+   }
+
+   .botonrecagar:hover{
+    background-color:#033b13;
+    color: white;
+}
+
+  .boton{
+    background-color: #00bf36;
+    color: white;
+    height:50px;
+    width:200px;
+    border:none;
+    border-radius: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    
+}
+.boton:hover{
+    background-color:rgb(255, 255, 255);
+    color: #00bf36;
+}
+
+.boton1{
+    background-color: #00bf36;
+    color: white;
+    height:50px;
+    width:220px;
+    border:none;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    
+}
+.boton1:hover{
+    background-color:rgb(255, 255, 255);
+    color: #00bf36;
+}
+
+.boton2{
+    background-color: #00bf36;
+    color: white;
+    height:50px;
+    width:220px;
+    border:none;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 45%;
+    left: 18%;
+    
+}
+.boton2:hover{
+    background-color:rgb(255, 255, 255);
+    color: #00bf36;
+}
