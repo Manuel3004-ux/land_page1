@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  width: 100vw;
+  height: 100vh;
 }
 
+
 body {
-  font-family: «DejaVu Sans Mono», »Bitstream Vera Sans Mono», monospace;
+
   background: rgb(27, 124, 85);
   color: white;
   line-height: 1.6;
@@ -148,11 +150,11 @@ nav .logo img {
 .inicio-imagen {
   position: absolute;
   right: 2rem;
-  left: 75%;
+  left: 80%;
   top: 60%;
   transform: translate(-50%, -50%);
-  width: min(400px, 30vw);
-  height: min(400px, 30vw);
+  width: min(300px, 30vw);
+  height: min(300px, 30vw);
   border-radius: 50%;
   border-color: #ffffff;
   border-style: solid;
@@ -178,7 +180,7 @@ h2 {
 
 .underline {
   height: 8px;
-  width: 800px;
+  width: 700px;
   background-color: white;
   margin-bottom: 1.5rem;
 }
@@ -212,44 +214,6 @@ h2 {
   margin-top: 2rem;
 }
 
-.project-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 2rem;
-  border-radius: 1rem;
-  transition: transform 0.3s;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.project-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(16, 186, 81);
-  border-radius: 1rem;
-  z-index: -1;
-  transform: translate(8px, 8px);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translate(-10px, -10px);
-}
-
-.project-card:hover::after {
-  transform: translate(12px, 12px);
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-card p {
-  color: rgba(1, 1, 1, 0.8);
-}
 
 @media (max-width: 768px) {
   nav {
@@ -401,49 +365,69 @@ h2 {
 .project-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   transition: transform 0.3s;
   text-align: center;
   color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-
-
-  height: 100%; 
+  
+  width: 300px; /* Tamaño fijo */
+  height: 350px; /* Mantiene proporción */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(16, 186, 81);
+  border-radius: 1rem;
+  z-index: -1;
+  height: 100%;
+  transform: translate(8px, 8px);
+  transition: transform 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
 }
 
-.project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-card p {
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  flex-grow: 1; 
+.project-card:hover::after {
+  transform: translate(12px, 12px);
 }
 
 .project-image {
   width: 100%;
-  height: 200px; 
+  height: 150px; /* Altura fija */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .project-image img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 0.5rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.project-card p {
+  font-size: 1rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .tech-stack {
@@ -461,7 +445,7 @@ h2 {
   font-weight: bold;
 }
 
-
+/* Responsivo */
 @media (max-width: 1024px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
@@ -473,6 +457,40 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  
+  width: 300px; /* Tamaño fijo */
+  height: auto; /* Ajusta según contenido */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  flex-grow: 0; /* No fuerza el crecimiento */
+  overflow: visible; /* Asegura que el texto sea visible */
+  text-overflow: unset;
+  display: block; /* Restablece el comportamiento normal */
+  max-height: none; /* Evita limitaciones en altura */
+}
+
+.project-card .tech-stack {
+  margin-top: auto; /* Empuja la sección de tecnologías hacia abajo */
+}
+
 
 /*Tarjeta*/
 
@@ -870,5 +888,4 @@ textarea:focus {
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 
